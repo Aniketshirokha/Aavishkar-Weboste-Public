@@ -2071,6 +2071,20 @@ blockquote.wp-block-quote cite {
   overflow: hidden;
 }
 
+ codex/add-clickable-service-cards-in-grid-layout-aqewq8
+.industry-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid #e7e7e7;
+  background: #fff;
+  color: var(--color-black);
+  font-weight: 500;
+  box-shadow: 0 10px 24px rgba(16, 24, 40, 0.08);
+}
+
 /*================================================
 7. Skill CSS
 =================================================*/

@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     VANTA.GLOBE({
-        el: "#glob", 
+        el: "#hero-globe",
         mouseControls: true,
         touchControls: true,
         gyroControls: false,

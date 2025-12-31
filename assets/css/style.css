@@ -1981,8 +1981,10 @@ blockquote.wp-block-quote cite {
   border-radius: 20px;
   padding: 40px;
   width: min(640px, calc(100% - 32px));
+
   max-height: 85vh;
   overflow-y: auto;
+
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -1990,6 +1992,7 @@ blockquote.wp-block-quote cite {
   .service-lightbox__dialog {
     padding: 28px 22px;
   }
+
   .service-lightbox__title {
     font-size: 22px;
   }
@@ -2086,6 +2089,9 @@ blockquote.wp-block-quote cite {
 .lightbox-open {
   overflow: hidden;
 }
+
+
+ codex/add-clickable-service-cards-in-grid-layout-aqewq8
 
 .industry-pill {
   display: inline-flex;

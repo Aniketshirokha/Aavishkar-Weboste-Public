@@ -214,7 +214,7 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus {
 }
 
 .bg_dp_black2{
-  background-color:  rgba(0, 0, 0, 0.458);
+  background-color: #0b1220;
 }
 
 .text_black {
@@ -2072,6 +2072,7 @@ blockquote.wp-block-quote cite {
 }
 
  codex/add-clickable-service-cards-in-grid-layout-aqewq8
+
 .industry-pill {
   display: inline-flex;
   align-items: center;
@@ -3256,6 +3257,7 @@ blockquote.wp-block-quote cite {
 
 .footer-area.footer-area-one {
   padding-top: 65px;
+  background: transparent;
 }
 @media only screen and (max-width: 991.98px) {
   .footer-area.footer-area-one {
@@ -3266,6 +3268,7 @@ blockquote.wp-block-quote cite {
 .footer-widgets .footer-title {
   margin-bottom: 20px;
   font-size: 22px;
+  letter-spacing: 0.3px;
 }
 
 .footer-menus {
@@ -3276,6 +3279,7 @@ blockquote.wp-block-quote cite {
 .footer-menus li a {
   color: var(--color-gray);
   transition: all 0.3s;
+  font-weight: 500;
 }
 .footer-menus li a:hover {
   color: #fff;
@@ -3316,16 +3320,58 @@ blockquote.wp-block-quote cite {
 }
 
 .footer-wrapper {
-  background-image: url(../images/footer-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: none;
+  background-color: #0b1220;
   padding: 0 30px 30px;
 }
 @media only screen and (max-width: 767.98px) {
   .footer-wrapper {
     padding: 0 10px 10px;
   }
+}
+
+.case-studies-table-wrap {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 20px 45px rgba(16, 24, 40, 0.08);
+  overflow-x: auto;
+}
+.case-studies-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+.case-studies-table th,
+.case-studies-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #ececee;
+  text-align: left;
+  vertical-align: top;
+}
+.case-studies-table th {
+  color: var(--color-black);
+  font-weight: 600;
+  background: #f8f7ff;
+}
+.case-studies-table tr:last-child td {
+  border-bottom: none;
+}
+.case-study-card {
+  border: 1px solid #ececee;
+  border-radius: 16px;
+  padding: 28px;
+  background: #fff;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.case-study-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(16, 24, 40, 0.12);
+}
+.case-study-card h3 {
+  margin-top: 12px;
+  margin-bottom: 10px;
 }
 
 .footer-two-company-info h2 {

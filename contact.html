@@ -227,6 +227,7 @@
 									<input class="w-100" type="text" id="fullName" placeholder="Full Name" required>
 									<input class="w-100" type="email" id="email" placeholder="Email" required>
 									<input class="w-100" type="text" id="contactNumber" placeholder="Contact Number" required maxlength="10" >
+									<input type="hidden" id="serviceInterest" name="serviceInterest">
 									<textarea class="w-100" id="message" rows="5" cols="50" placeholder="Message"
 										required></textarea>
 									<button type="button"
@@ -559,6 +560,22 @@
 	<script src="assets/js/main.js"></script>
 	<!-- form js -->
 	<script src="assets/js/form.js"></script>
+	<script>
+		const serviceParam = new URLSearchParams(window.location.search).get("service");
+		if (serviceParam) {
+			const interestLine = `Interested in: ${serviceParam}`;
+			const serviceField = document.getElementById("serviceInterest");
+			const messageField = document.getElementById("message");
+			if (serviceField) {
+				serviceField.value = interestLine;
+			}
+			if (messageField && !messageField.value.includes(interestLine)) {
+				messageField.value = messageField.value.trim()
+					? `${interestLine}\n${messageField.value.trim()}`
+					: interestLine;
+			}
+		}
+	</script>
 </body>
 
 </html>
